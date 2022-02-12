@@ -95,19 +95,21 @@ function saveCurrentCover (){
 }
 
 function viewSavedCovers() {
+  var addHTML = '';
   document.querySelector('.saved-view').classList.remove('hidden');
   document.querySelector('.home-button').classList.remove('hidden')
   var section = document.querySelector(".saved-covers-section")
     for (var i = 0; i < savedCovers.length; i++) {
- section.innerHTML +=`
+    addHTML += `
  <section class="mini-cover">
- <img class="cover-image" src="${savedCovers[i].cover}">
+ <img class="cover-image" id="${savedCovers[i].id}"src="${savedCovers[i].cover}">
  <h2 class="cover-title">${savedCovers[i].title}</h2>
  <h3 class="tagline">A tale of <span class="tagline-1">${savedCovers[i].tagline1}</span> and <span class="tagline-2">${savedCovers[i].tagline2}</span></h3>
  <img class="price-tag" src="./assets/price.png">
  <img class="overlay" src="./assets/overlay.png">
+ </section>;
  `
- }
+} section.innerHTML = addHTML;
 }
 
 console.log(currentCover, 'currentCover')
