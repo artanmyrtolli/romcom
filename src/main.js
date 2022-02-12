@@ -9,28 +9,21 @@ var grabTagline2 = document.querySelector('.tagline-2')
 var savedCovers = [];
 var currentCover = [];
 
-
-
 // Add your event listeners here 👇
-document.querySelector('.random-cover-button').onclick = function() {randomBook()};
+document.querySelector('.random-cover-button').onclick = function() {
+  randomBook() };
 document.querySelector('.view-saved-button').onclick = function() {
   hideEverything();
-  viewSavedCovers();
-};
+  viewSavedCovers(); };
 document.querySelector('.make-new-button').onclick = function() {
   hideEverything();
-  makeNewCoverForm();
-};
+  makeNewCoverForm(); };
 document.querySelector('.home-button').onclick = function() {
-  homeButton();
-};
+  homeButton(); };
 document.querySelector('.create-new-book-button').onclick = function() {
-  makeMyBook();
-};
+  makeMyBook(); };
 document.querySelector('.save-cover-button').onclick = function() {
-  saveCurrentCover();
-};
-
+  saveCurrentCover(); };
 
 // Create your event handlers and other functions here 👇
 randomBook();
@@ -56,6 +49,7 @@ function hideEverything () {
   document.querySelector('.random-cover-button').hidden = true;
   document.querySelector('.save-cover-button').hidden = true;
   document.querySelector('.saved-view').classList.add('hidden');
+  document.querySelector('.form-view').classList.add('hidden')
 }
 
 function homeButton() {
@@ -88,7 +82,6 @@ function displayUserBook() {
 function saveCurrentCover (){
   if (!savedCovers.includes(currentCover[0])) {
       savedCovers.push(currentCover[0]);
-      // currentCover.shift()
   }
     console.log(savedCovers, 'savedCovers');
     console.log(currentCover, `currentCover`);
@@ -101,19 +94,25 @@ function viewSavedCovers() {
   var section = document.querySelector(".saved-covers-section")
     for (var i = 0; i < savedCovers.length; i++) {
     addHTML += `
- <section class="mini-cover">
- <img class="cover-image" id="${savedCovers[i].id}"src="${savedCovers[i].cover}">
+ <section class="mini-cover"id="${savedCovers[i].id}" onDblClick="reply_click(this.id)">
+ <img class="cover-image"src="${savedCovers[i].cover}">
  <h2 class="cover-title">${savedCovers[i].title}</h2>
  <h3 class="tagline">A tale of <span class="tagline-1">${savedCovers[i].tagline1}</span> and <span class="tagline-2">${savedCovers[i].tagline2}</span></h3>
- <img class="price-tag" src="./assets/price.png">
- <img class="overlay" src="./assets/overlay.png">
- </section>;
- `
+ </section>`
 } section.innerHTML = addHTML;
 }
 
+function reply_click (id){
+  for (var i = 0; i < savedCovers.length; i++) {
+     if (id == savedCovers[i].id) {
+       savedCovers.splice(i, 1)
+       viewSavedCovers()
+    }
+  }
+}
+
 console.log(currentCover, 'currentCover')
-// We've provided one function to get you started
+
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
