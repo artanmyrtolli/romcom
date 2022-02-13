@@ -2,10 +2,10 @@
 
 This project tackles the desire of making your own RomCom cover. Its designed to provide you with examples that will meet all your fantasy RomCom needs while offering the functionality of creating your own cover if that does not suffice. Feel free to browse through the application and find a cover you like.
 
-## Contributos
+## Contributors
 
-###Artan Myrtolli
-###Daniel Neer
+### Artan Myrtolli
+### Daniel Neer
 
 ## Deployable Link
 
