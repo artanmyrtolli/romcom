@@ -20,6 +20,7 @@ If you would like to check out the application yourself you can access it [here.
 3. HTML
 
 ### Set Up
+
 If you would like to access these files on your machine please follow the instructions below.
 
 1. Fork this repository
