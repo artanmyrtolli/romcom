@@ -4,8 +4,8 @@ This project tackles the desire of making your own RomCom cover. Its designed to
 
 ## Contributos
 
-###*Artan Myrtolli*
-###*Daniel Neer*
+###Artan Myrtolli
+###Daniel Neer
 
 ## Deployable Link
 
@@ -21,7 +21,9 @@ If you would like to access these files on your machine please follow the instru
 4. Open the files in your preferred text editor.
 
 ## Application in Action
+
 Take a look at the creative covers you can make.
+
 ![Screen Shot 2022-02-12 at 7 51 33 PM](https://user-images.githubusercontent.com/92230099/153737893-11f0b59b-ed30-4fd7-8232-8c7c91cccf86.png)
 
 # Application Operating Instructions
