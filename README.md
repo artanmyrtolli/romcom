@@ -7,10 +7,17 @@ This project tackles the desire of making your own RomCom cover. Its designed to
 ### Artan Myrtolli
 ### Daniel Neer
 
+### Travis Rollins - Project Manager
+
 ## Deployable Link
 
 If you would like to check out the application yourself you can access it [here.](https://artanmyrtolli.github.io/romcom/)
 
+## Technologies Used
+
+1. Javascript
+2. CSS
+3. HTML
 
 ### Set Up
 If you would like to access these files on your machine please follow the instructions below.
