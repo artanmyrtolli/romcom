@@ -4,8 +4,8 @@ This project tackles the desire of making your own RomCom cover. Its designed to
 
 ## Contributos
 
-*###Artan Myrtolli
-*###Daniel Neer
+*###Artan Myrtolli*
+*###Daniel Neer*
 
 ## Deployable Link
 
